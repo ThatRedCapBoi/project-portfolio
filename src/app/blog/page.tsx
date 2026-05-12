@@ -21,7 +21,7 @@ export default function BlogPage() {
           Writing
         </h1>
         <p className="mt-3 mb-16 text-muted-foreground">
-          Thoughts on engineering, design, and the spaces between.
+          Thoughts on random stuff and spaces in-between.
         </p>
 
         {/* ── Post list ────────────────────────────────────────────────── */}

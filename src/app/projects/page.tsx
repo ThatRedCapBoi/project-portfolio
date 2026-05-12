@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             Selected Projects
           </h1>
           <p className="mt-3 max-w-[50ch] text-muted-foreground">
-            A collection of projects spanning web development, tooling, and open-source.
+            A collection of projects.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
         <div key={year} className="mb-16">
           {/* Year divider */}
           <div className="mb-8 flex items-center gap-4">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground/50">
+            <span className="font-mono text-[16px] uppercase tracking-widest text-[#b84500]">
               {year}
             </span>
             <div className="h-px flex-1 bg-border" />

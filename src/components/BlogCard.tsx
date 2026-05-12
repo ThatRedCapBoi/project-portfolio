@@ -23,7 +23,7 @@ export function BlogCard({ post }: BlogCardProps) {
         {/* Date column */}
         <time
           dateTime={post.date}
-          className="min-w-[68px] font-mono text-[9px] uppercase tracking-wider text-muted-foreground/55 pt-0.5"
+          className="min-w-[68px] font-mono text-[12px] uppercase tracking-wider text-foreground/55 pt-0.5"
         >
           {formatDate(post.date)}
         </time>

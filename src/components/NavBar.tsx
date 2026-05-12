@@ -26,7 +26,7 @@ export function NavBar() {
         {/* Logo — monospaced with safety-orange brackets */}
         <Link href="/" className="group flex items-center gap-1 font-mono text-sm">
           <span className="text-safety group-hover:opacity-70 transition-opacity">[</span>
-          <span className="text-foreground">YOUR.NAME</span>
+          <span className="text-foreground">ILHAN.NURIZZWAN</span>
           <span className="text-safety group-hover:opacity-70 transition-opacity">]</span>
         </Link>
 

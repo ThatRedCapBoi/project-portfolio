@@ -67,12 +67,12 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mb-5 flex flex-wrap items-center gap-3">
             <time
               dateTime={post.date}
-              className="font-mono text-[10px] uppercase tracking-widest text-safety/70"
+              className="font-mono text-[12px] uppercase tracking-widest text-safety/70"
             >
               {formatDate(post.date)}
             </time>
             <span className="h-px w-4 bg-border" />
-            <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground/55">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/55">
               {post.readingTime}&nbsp;min read
             </span>
           </div>
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Tags */}
           {post.tags.length > 0 && (
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2 foreground/70">
               {post.tags.map((tag) => (
                 <Badge key={tag}>#{tag}</Badge>
               ))}

@@ -43,7 +43,7 @@ export function HeroSection() {
         <div className="mb-10 flex items-center gap-2">
           <span className="inline-block h-[7px] w-[7px] animate-blink bg-safety" />
           <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-safety/80">
-            System Online — Portfolio v2025
+            System Online — Portfolio v2026
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function HeroSection() {
           className="font-bold leading-[0.88] tracking-tighter text-foreground"
           style={{ fontSize: 'clamp(3.8rem, 11vw, 9.5rem)' }}
         >
-          YOUR
+          ILHAN
           <br />
           {/* Gradient: white → safety orange */}
           <span
@@ -64,23 +64,22 @@ export function HeroSection() {
               backgroundClip: 'text',
             }}
           >
-            NAME
+            NURIZZWAN
           </span>
         </h1>
 
         {/* Role line */}
         <div className="mt-6 flex items-center gap-4">
           <div className="h-px w-14 bg-safety/50" />
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
-            Full-Stack Engineer&nbsp;·&nbsp;Creative Developer
+          <p className="font-bold-mono text-[11px] uppercase tracking-[0.30em] text-foreground">
+           Final Year Software Engineer Student @ UniKL MIIT 
           </p>
         </div>
 
         {/* Bio */}
         <p className="mt-8 max-w-[44ch] leading-relaxed text-muted-foreground">
-          Building precise, expressive interfaces at the intersection of
-          engineering rigour and creative vision. Tuned to the frequency of
-          good ideas.
+          Working on improving myself by exploring new ideas and designing new creative design or anything content creation. 
+          Interested in visualisation and minimal w/ industrial design concept
         </p>
 
         {/* CTAs */}
@@ -96,9 +95,9 @@ export function HeroSection() {
         {/* Stats row */}
         <div className="relative mt-20 grid max-w-sm grid-cols-3 gap-8 border-t border-border pt-8">
           {[
-            { value: '04', label: 'Projects' },
-            { value: '02', label: 'Posts' },
-            { value: '3+', label: 'Yrs Exp.' },
+            { value: '01', label: 'Projects' },
+            { value: '01', label: 'Posts' },
+            { value: '2+', label: 'Yrs Exp.' },
           ].map(({ value, label }) => (
             <div key={label}>
               <div className="font-mono text-2xl font-bold text-safety">{value}</div>
@@ -116,7 +115,7 @@ export function HeroSection() {
         aria-hidden="true"
       >
         <p>35.6762°&nbsp;N&nbsp;·&nbsp;139.6503°&nbsp;E</p>
-        <p>STELLAR REF: SG-2025·FOLIO</p>
+        <p>STELLAR REF: SG-2026·FOLIO</p>
       </div>
 
       {/* ── Scroll indicator ──────────────────────────────────────────────── */}
