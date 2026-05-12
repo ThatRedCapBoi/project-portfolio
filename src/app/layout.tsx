@@ -9,6 +9,13 @@ import './globals.css';
 // ── Site-wide metadata ────────────────────────────────────────────────────────
 // Override per-page with `export const metadata` in each page.tsx.
 
+// ── Build the icon URL with basePath prefix ────────────────────────────────
+// This matches next.config.js logic: basePath is `/project-portfolio` in prod
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = process.env.REPO_NAME || '';
+const basePath = isProd && repoName ? `/${repoName}` : '';
+const iconUrl = `${basePath}/icon.svg`;
+
 export const metadata: Metadata = {
   title: {
     default: 'Ilhan Nurizzwan — Personal Space',
@@ -20,9 +27,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://thatredcapboi.github.io'),
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: iconUrl, type: 'image/svg+xml' },
     ],
-    shortcut: '/icon.svg',
+    shortcut: iconUrl,
   },
 };
 
