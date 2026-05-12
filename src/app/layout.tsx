@@ -3,6 +3,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { NavBar } from '@/components/NavBar';
 import { StarField } from '@/components/StarField';
+// @ts-ignore: Cannot find module or type declarations for CSS imports.
 import './globals.css';
 
 // ── Site-wide metadata ────────────────────────────────────────────────────────
@@ -10,13 +11,19 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Your Name — Frontend Engineer',
-    template: '%s | Your Name',
+    default: 'Ilhan Nurizzwan — Personal Space',
+    template: '%s | Ilhan Nurizzwan',
   },
   description:
-    'Full-Stack Engineer and Creative Developer building precise, expressive interfaces.',
+    'Meow Meow',
   // Update the URL once deployed:
-  metadataBase: new URL('https://yourusername.github.io'),
+  metadataBase: new URL('https://thatredcapboi.github.io'),
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -44,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="border-t border-border mt-24 py-8">
             <div className="container mx-auto flex flex-col items-center justify-between gap-3 md:flex-row">
               <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                © {new Date().getFullYear()} Your Name&nbsp;·&nbsp;Built with{' '}
+                © {new Date().getFullYear()} ILHAN NURIZZWAN&nbsp;·&nbsp;Built with{' '}
                 <span className="text-safety">Next.js</span> +{' '}
                 <span className="text-safety">Tailwind</span>
               </p>
@@ -52,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className="font-mono text-[8px] uppercase tracking-widest text-muted-foreground/35"
                 aria-hidden="true"
               >
-                STELLAR GRID · v2025 · SYSTEM NOMINAL
+                STELLAR GRID · v2026 · SYSTEM NOMINAL
               </p>
             </div>
           </footer>
