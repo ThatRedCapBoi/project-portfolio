@@ -115,7 +115,7 @@ export function HeroSection() {
         aria-hidden="true"
       >
         <p>35.6762°&nbsp;N&nbsp;·&nbsp;139.6503°&nbsp;E</p>
-        <p>STELLAR REF: SG-2026·FOLIO</p>
+        <p>STELLAR REF: MY-2026·FOLIO</p>
       </div>
 
       {/* ── Scroll indicator ──────────────────────────────────────────────── */}
